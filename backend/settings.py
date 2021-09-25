@@ -29,6 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "https://spaceapp313.herokuapp.com/",
+    "https://mamunspacer.herokuapp.com/",
     "localhost",
     "127.0.0.1"
 ]
