@@ -9,6 +9,12 @@ from skyfield.api import load, wgs84
 from skyfield.api import EarthSatellite
 import json
 
+def nan_checker(abc):
+        temp = '{:.4f}'.format(abc)
+        if  temp == "nan":
+            return "0"
+        return temp
+
 def satelite_data(stations_url):
     # textfile = requests.get(stations_url)
     satellites = load.tle_file(stations_url)
@@ -26,12 +32,12 @@ def satelite_data(stations_url):
     for sat in satellites:
         geocentric = sat.at(t)
         subpoint = wgs84.subpoint(geocentric)
-        latitude.append('{:.4f}'.format(subpoint.latitude.degrees))
-        longitude.append('{:.4f}'.format(subpoint.longitude.degrees))
+        latitude.append(nan_checker(subpoint.latitude.degrees))
+        longitude.append(nan_checker(subpoint.longitude.degrees))
         name = sat.name
-        temp = str(sat).split(' ')
+        # temp = str(sat).split(' ')
         # epoch.append(str(temp[6] + " " + temp[7]))
-        altitude.append('{:.2f}'.format(subpoint.elevation.km))
+        altitude.append(nan_checker(subpoint.elevation.km))
 
     sat_data["latitude"] = latitude
     sat_data["longitude"] = longitude
