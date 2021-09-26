@@ -31,7 +31,7 @@ def satelite_data(stations_url):
         name = sat.name
         temp = str(sat).split(' ')
         # epoch.append(str(temp[6] + " " + temp[7]))
-        altitude.append(format(subpoint.elevation.km))
+        altitude.append('{:.2f}'.format(subpoint.elevation.km))
 
     sat_data["latitude"] = latitude
     sat_data["longitude"] = longitude
