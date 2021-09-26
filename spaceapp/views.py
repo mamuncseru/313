@@ -26,13 +26,12 @@ def satelite_data(stations_url):
     for sat in satellites:
         geocentric = sat.at(t)
         subpoint = wgs84.subpoint(geocentric)
-        latitude.append(subpoint.latitude.degrees)
-        longitude.append(subpoint.longitude.degrees)
+        latitude.append('{:.4f}'.format(subpoint.latitude.degrees))
+        longitude.append('{:.4f}'.format(subpoint.longitude.degrees))
         name = sat.name
         temp = str(sat).split(' ')
         # epoch.append(str(temp[6] + " " + temp[7]))
         altitude.append(format(subpoint.elevation.km))
-
 
     sat_data["latitude"] = latitude
     sat_data["longitude"] = longitude
