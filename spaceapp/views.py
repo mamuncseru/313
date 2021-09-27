@@ -67,8 +67,8 @@ def calculate_initial_paramenters(stations_url):
     # Make a list of 100 days
     today_date = datetime.now(timezone.utc)
     today_date = today_date.replace(tzinfo=pytz.utc)
-    date_list = pd.date_range(start = today_date, periods = 5, freq='D').to_pydatetime().tolist()
-
+    date_list = pd.date_range(start = today_date, periods = 43200, freq='S').to_pydatetime().tolist()
+    # print(date_list)
     # Load timescale
     ts = load.timescale()
     t = ts.utc(date_list)
@@ -120,18 +120,18 @@ def debri_4(request):
     data = json.dumps(satelite_data(url_4))
     return HttpResponse(data)
 
-def pred_1(request):
-    data = json.dumps(calculate_initial_paramenters(url_1))
-    return HttpResponse(data)
+# def pred_1(request):
+#     data = json.dumps(calculate_initial_paramenters(url_1))
+#     return HttpResponse(data)
 
 def pred_2(request):
     data = json.dumps(calculate_initial_paramenters(url_2))
     return HttpResponse(data)
 
-def pred_3(request):
-    data = json.dumps(calculate_initial_paramenters(url_3))
-    return HttpResponse(data)
+# def pred_3(request):
+#     data = json.dumps(calculate_initial_paramenters(url_3))
+#     return HttpResponse(data)
 
-def pred_4(request):
-    data = json.dumps(calculate_initial_paramenters(url_4))
-    return HttpResponse(data)
+# def pred_4(request):
+#     data = json.dumps(calculate_initial_paramenters(url_4))
+#     return HttpResponse(data)
