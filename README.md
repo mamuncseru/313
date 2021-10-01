@@ -115,7 +115,7 @@ Now, We can see real time debris moving around the earth and by clicking individ
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GNU GPL 3.0 License. See `LICENSE` for more information.
 
 
 <!-- USAGE -->
