@@ -75,8 +75,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Starting Point](/images/starting%20point.png)
 ![Debris Visuals](/images/debri%20visuals.png)
+![Starting Point](/images/starting%20point.png)
 ![Product Name Screen Shot](/images/future%20path%20predictin.png)
 
 
