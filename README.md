@@ -65,6 +65,7 @@
       </ul>
     </li>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -75,10 +76,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Debris Visuals](/images/debri%20visuals.png)
-![Starting Point](/images/starting%20point.png)
-![Product Name Screen Shot](/images/future%20path%20predictin.png)
+![Debris Visuals](images/1.png)
 
+![Starting Point](images/2.png)
 
 Real time space trash monitoring application which allows the user to have an amazing experience of seeing the space debris moving around our beloved Earth.
 
@@ -116,6 +116,20 @@ Now, We can see real time debris moving around the earth and by clicking individ
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+
+<!-- USAGE -->
+## Usage
+
+![3](images/3.png)
+
+![4](images/4.png)
+
+![5](images/5.png)
+
+After opening our app you can see options like zoom in and out. few seconds later our app will fetch realtime debris data and show them on screen. There are 4 catagories debri that we got from celestrak. If we tap on individual debris we can get their real time Latitude, Longitude, Elevation, Name and no of total debris of that catagory currently tracked. 
+You will also get a option to predict future path for the selected debris for x days. 
+On that screen you can visualy see the path the debris will follow for the selected days. We have a very user friendly UI which is very interactive and easy to use, such as our speed option will let the user see debris moving to the path in any pace he/she wants.
 
 
 <!-- ACKNOWLEDGEMENTS -->
