@@ -102,8 +102,11 @@ Anyone with the app can have the exact information with just a few clicks rather
 
 <!-- OVERVIEW-->
 ## Overview
+
 This is how the application works:
+
 ![overview](images/overview.png)
+
 We are fetching all the debris TLE dataset from Celestrak using a python library called "Skyfield" which runs above sgp4 library and calculating latitude, longitude, altitude along with other crucial information of debris and storing them in a JSON format. After that we are using a REST API and deploying them on Heroku web server so that we can get real time data anytime we want. We used Unity3D engine to fetch those JSON data in real-time and visualize them by using coordinate mapper.
 
 Now, We can see real time debris moving around the earth and by clicking individual debris we get there additional information such as latitude, longitude, elevation, name, no of total debris and much more. Our unique feature will allow users to predict the future path of the debris in a very convenient way as well. Interactivity and usability is our selling point.
