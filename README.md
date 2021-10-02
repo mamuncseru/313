@@ -25,6 +25,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![GitHub release (latest by date)][release-shield]][release-url]
 
 
 
@@ -121,6 +122,8 @@ Distributed under the GNU GPL 3.0 License. See `LICENSE` for more information.
 <!-- USAGE -->
 ## Usage
 
+First download the latest APK from [releases](https://github.com/mamuncseru/313/releases) and install. Currently only available for Android; iOS version will be released soon.
+
 ![3](images/3.png)
 
 ![4](images/4.png)
@@ -155,3 +158,5 @@ On that screen you can visualy see the path the debris will follow for the selec
 [license-url]: https://github.com/mamuncseru/313/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mamuncseru
+[release-shield]: https://img.shields.io/github/v/release/mamuncseru/313?style=for-the-badge
+[release-url]: https://github.com/mamuncseru/313/releases
